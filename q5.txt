@@ -1,0 +1,12 @@
+
+1. Does the change inside increment_int_a change the variable a after the function call?
+Answer: The value does not change when you call the function increment_int_a
+because the function is called as a call by value. So, when the function is called a copy 
+of variable a will be passed to function and the changes will be done to that copy which will
+not reflect to the original variable a.
+
+2. Does the change inside increment_int_b change the variable b after the function call?
+Answer: The value changes when the function is called because when a mutable object is 
+passed to a function it is passed as a call by reference which means the value pass to
+the function will reference to the same location of original object hence changes made 
+inside the function will also change the original object.
